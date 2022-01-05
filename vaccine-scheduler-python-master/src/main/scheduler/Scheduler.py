@@ -422,13 +422,6 @@ def upload_availability(tokens):
         print("Error occurred when uploading availability")
 
 
-def cancel(tokens):
-    """
-    TODO: Extra Credit
-    """
-    pass
-
-
 def add_doses(tokens):
     #  add_doses <vaccine> <number>
     #  check 1: check if the current logged-in user is a caregiver
