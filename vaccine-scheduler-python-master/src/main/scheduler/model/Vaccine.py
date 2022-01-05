@@ -1,4 +1,5 @@
 import sys
+sys.path.append("../util/*")
 sys.path.append("../db/*")
 from db.ConnectionManager import ConnectionManager
 import pymssql
@@ -13,7 +14,7 @@ class Vaccine:
     def get(self):
         cm = ConnectionManager()
         conn = cm.create_connection()
-        cursor = conn.cursor()
+        cursor = conn.cursor(as_dict=True)
 
         get_vaccine = "SELECT Name, Doses FROM Vaccines WHERE Name = %s"
         try:

@@ -1,3 +1,4 @@
+import random
 import sys
 sys.path.append("../util/*")
 sys.path.append("../db/*")
